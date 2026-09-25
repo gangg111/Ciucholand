@@ -1,7 +1,7 @@
 # Ciucholand
 
 Aplikacja na Androida do pilnowania terminów odbioru odzieży roboczej. Dodajesz ubranie z datą
-ostatniego wydania i przydziałem (np. co 12 miesięcy), a aplikacja przypomina o odbiorze,
+ostatniego wydania i przydziałem, a aplikacja przypomina o odbiorze,
 prowadzi historię i pilnuje zaległości.
 
 ## Funkcje
@@ -23,36 +23,6 @@ prowadzi historię i pilnuje zaległości.
 ## Wymagania
 
 - Android 10 (API 29) lub nowszy, arm64-v8a.
-- Do budowania: JDK 17/21; projekt zawiera Gradle wrapper.
-
-## Budowanie
-
-```bash
-./gradlew :app:assembleDebug     # szybki build testowy
-./gradlew :app:assembleRelease   # wersja release, podpisana kluczem autora
-```
-
-APK: `app/build/outputs/apk/release/app-release.apk`
-
-Build release wymaga klucza `~/.android/ciuchy-release.jks` i hasła w pliku
-`~/.android/ciuchy-release.pass`.
-
-### Termux (aarch64)
-
-Projekt jest skonfigurowany pod budowanie bezpośrednio na telefonie: `gradle.properties`
-wskazuje natywny `aapt2` z Termuxa (`android.aapt2FromMavenOverride`), bo wersja z Maven
-jest x86_64, a `compileSdk` jest przypięty do 34. Wymagane pakiety:
-`openjdk-21`, `aapt2`, `apksigner`, `zipalign`.
-
-## Struktura projektu
-
-```
-app/src/main/java/com/ciuchy/vwp/
-  MainActivity.kt      - UI (Jetpack Compose Material 3) i logika ekranu
-  Store.kt             - model wpisu oraz zapis/odczyt (SharedPreferences, JSON)
-  ReminderReceiver.kt  - dzienny alarm, powiadomienia i ich akcje
-app/src/main/res/drawable/  - ikony typów ubrań
-```
 
 ## Dane
 
@@ -68,4 +38,4 @@ zgody autora. Pełny tekst: [`LICENSE`](LICENSE).
 
 ## Autor
 
-Artur Szafraniec - wersja 1.0.0
+Artur Szafraniec
