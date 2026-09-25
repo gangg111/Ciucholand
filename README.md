@@ -31,7 +31,7 @@ prowadzi historię i pilnuje zaległości.
 ## Dane
 
 Wpisy są przechowywane lokalnie w SharedPreferences jako JSON - aplikacja nie wysyła
-nic do internetu. Kopię zapasową zrobisz w Ustawieniach ("Zapisz do pliku") i wczytasz
+nic do internetu. Kopię zapasową zrobisz w Ustawieniach ("Zapisz do pliku") i przywrócisz
 przyciskiem "Wczytaj z pliku".
 
 ## Licencja
