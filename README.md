@@ -4,7 +4,9 @@ Aplikacja na Androida do pilnowania terminów odbioru odzieży roboczej. Dodajes
 ostatniego wydania i przydziałem, a aplikacja przypomina o odbiorze,
 prowadzi historię i pilnuje zaległości.
 
+<p align="center">
 <img src="screenshot.jpg" alt="Ciucholand - lista wpisów w trybie ciemnym" width="300">
+</p>
 
 ## Funkcje
 
